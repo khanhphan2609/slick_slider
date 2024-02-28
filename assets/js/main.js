@@ -150,12 +150,13 @@ $(document).ready(function(){
     // Slider 5
     $('#slider5').slick({
       centerMode: true,
-      centerPadding: '200px',
+      centerPadding: '13vw',
       slidesToShow: 1,
       slidesToScroll: 1,
       infinite: true,
       arrows: true,
       draggable: false,
+      initialSlide: 2,
       // autoplay: true,
       // autoplaySpeed: 1000,
       responsive: [
@@ -177,5 +178,5 @@ $(document).ready(function(){
       prevArrow:"<button type='button' class='slick-prev pull-left'></button>",
       nextArrow:"<button type='button' class='slick-next pull-right'></button>",
       dots: true,
-  });
+    });
 });
