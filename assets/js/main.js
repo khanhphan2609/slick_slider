@@ -116,4 +116,66 @@ $(document).ready(function(){
    
         $('.slider-single').slick('slickGoTo', goToSingleSlide);
     });
+
+    // Slider 4
+    $('#slider4').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        arrows: true,
+        draggable: false,
+        // autoplay: true,
+        // autoplaySpeed: 1000,
+        responsive: [
+            {
+              breakpoint: 1025,
+              settings: {
+                slidesToShow: 3
+              }
+            }, 
+            {
+                breakpoint: 480,
+                settings: {
+                  slidesToShow: 1,
+                  arrows: false,
+                  infinite: false
+                }
+              },
+        ],
+        prevArrow:"<button type='button' class='slick-prev pull-left'></button>",
+        nextArrow:"<button type='button' class='slick-next pull-right'></button>",
+        dots: true,
+    });
+
+    // Slider 5
+    $('#slider5').slick({
+      centerMode: true,
+      centerPadding: '200px',
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      infinite: true,
+      arrows: true,
+      draggable: false,
+      // autoplay: true,
+      // autoplaySpeed: 1000,
+      responsive: [
+          {
+            breakpoint: 1025,
+            settings: {
+              slidesToShow: 3
+            }
+          }, 
+          {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                arrows: false,
+                infinite: false
+              }
+            },
+      ],
+      prevArrow:"<button type='button' class='slick-prev pull-left'></button>",
+      nextArrow:"<button type='button' class='slick-next pull-right'></button>",
+      dots: true,
+  });
 });
